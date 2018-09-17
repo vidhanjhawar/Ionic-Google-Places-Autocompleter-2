@@ -1,14 +1,29 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Places Autocomplete
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <ion-toolbar color="light">
+    <ion-input color="light" id="searching" placeholder="Search for a place"></ion-input>
+  </ion-toolbar>
+
+ <ion-list>
+   <ion-label>street number</ion-label>
+   <ion-input id="street_number" disabled="true" color="light"></ion-input>
+   <ion-label>address</ion-label>
+   <ion-input id="route" disabled="true" color="light"></ion-input>
+   <ion-label>city</ion-label>
+   <ion-input id="locality" disabled="true" color="light"></ion-input>
+   <ion-label>zipcode</ion-label>
+   <ion-input id="postal_code" disabled="true" color="light"></ion-input>
+   <ion-label>state</ion-label>
+   <ion-input id="administrative_area_level_1" disabled="true" color="light"></ion-input>
+   <ion-label>country</ion-label>
+   <ion-input id="country" disabled="true" color="light"></ion-input>
+
+ </ion-list>
 </ion-content>
